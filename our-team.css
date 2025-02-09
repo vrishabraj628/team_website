@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*Removing pre existing formatting*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    position: relative;
+    /* background-color: #000; */
+}
+html{
+    font-size: 7px;
+}
+.on-mob{
+    display: none;
+}
+/* Heading underlines */
+
+.line{
+    background-color: rgb(255, 0, 0);
+    height: 3px;
+    border-radius: 25px;
+    padding: 0%;
+    margin: 0% 4%;
+}
+.w1{
+    width: 145px;
+}
+.w2{
+    width: 105px;
+}
+.w3{
+    width: 150px;
+}
+.w4{
+    width: 250px;
+}
+
+/*Hero image CSS*/
+.hero-image {
+    background-image: url("./Assets/team_hero_pic4_top.JPG");
+    height: 95vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+.hero-text {
+    font-size: 7rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ghostwhite;
+    text-shadow: 0 0 3px #000;
+  }
+.hero-text2{
+    font-size: 5rem;
+    color: ghostwhite;
+  }
+/*Hero image CSS ends*/
+/* Font CSS */
+
+.para{
+    font-size: 3rem;
+    padding: 4%;
+    text-align: justify;
+}
+.heading{
+    font-size: 4.5rem;
+    padding: 4% 4% 0 4%;
+}
+
+
+/* Container CSS */
+
+
+.divs{
+    justify-items: center;
+    align-items: center;
+}
+.dept{
+    height: 70vh;
+    width: 85vw;
+    margin-bottom: 30px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.disp-img{
+    height: 100%;
+}
+.disp-img img{
+    height: 100%;
+    aspect-ratio: 5/3;
+}
+.content{
+    background-color: rgb(119,181,254,0.6);
+}
+
+.advisor{
+    display: flex;
+    align-items: center;
+    width: 85vw;
+}
+.advisor > div > .line{
+    background-color: black;
+    width: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 0.5px;
+}
+.advisor > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    /* text-align: center; */
+    align-items: center;
+}
+/* .advisor > div > p{
+    font-size: 2rem;
+} */
+.advisor > div > img{
+    height: 200px;
+    border-radius: 50%;
+}
+.advisor > div > img:hover{
+    scale: grow(1.1);
+}
+
+/* Member card CSS */
+.team{
+    display: block;
+    text-align: center;
+    justify-items: center;
+}
+.members, .cabinet{
+    justify-items: space-between;
+    width: 86vw;
+    padding-bottom: 30px;
+}
+.cabinet > a > img{
+    height: 250px;
+    margin: 0 30px 15px;
+    transition: opacity 0.3s;
+}
+.cabinet > a > img:hover{
+    opacity: 1;
+}
+.cabinet:hover > a > img:not(:hover){
+    opacity: 0.5;
+}
+/* .members > a > img{
+    height: 180px;
+    padding: 0 20px 10px;
+} */
+
+@media(max-width: 430px){
+    .dept .on-mob{
+        display: block;
+    }
+    .dept .on-mob img{
+        width: 90vw;
+    }
+    .hero-image {
+        background-image: url("./Assets/team_hero_pic4.JPG");
+        height: 42vh;
+        background-position: top;
+    }
+    .hero-text {
+        font-size: 3.3rem;
+    }
+
+    /* Text respo */
+    .heading{
+        font-size: 4.5rem;
+        padding: 4% 4% 0 4%;
+    }
+
+    
+    /* Divisions CSS */
+    .dept{
+        height: auto;
+        width: 90vw;
+        margin-bottom: 30px;
+        display: block;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .disp-img{
+        height: 100%;
+        display: none;
+    }
+    .disp-img img{
+        height: 100%;
+        aspect-ratio: 5/3;
+    }
+    .content{
+        background-color: rgb(119,181,254,0.6);
+    }
+    .w4{
+        width: 125px;
+    }
+    .para{
+        font-size: 2rem;
+        padding: 3% 5%;
+        text-align: justify;
+    }
+    .cabinet > a > img{
+        margin: 0 0 15px;
+    }
+}

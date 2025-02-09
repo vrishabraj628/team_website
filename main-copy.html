@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2023-24 | Team Arcis</title>
+    <!--Linking stylesheet-->
+    <link rel="stylesheet" href="./main-copy.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <!---->
+    <link rel="icon" type="image/x-icon" href="./Assets/logo_circle_icon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--Linking google fonts for icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!--Linking SwiperJS CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="hero-image">
+          <!--Nav and sidebar-->
+          <div class="nav">
+            <div class="img">
+              <img src="./Assets/Untitled design.png" alt="Arcis" />
+            </div>
+            <div class="menu">
+              Menu
+              <button class="hamburger">
+                <div class="lineup"></div>
+                <div class="linemiddle"></div>
+                <div class="linedown"></div>
+              </button>
+              <div class="close">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="our-team.html">Team</a></li>
+                  <li><a href="Sponsor.html">Sponsor</a></li>
+                  <li><a href="history.html">History</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hero-text">
+            <h1>Inception</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", () => {
+        const closeMenu = document.querySelector(".close");
+        const body = document.querySelector("body");
+        if (closeMenu.style.display === "flex") {
+          closeMenu.style.width = "0px";
+          closeMenu.style.display = "none";
+          body.classList.remove("no-scroll");
+        } else {
+          closeMenu.style.display = "flex";
+          closeMenu.style.width = "20vw";
+          body.classList.add("no-scroll");
+        }
+      });
+    </script>
+    <script src="nav-bar.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>

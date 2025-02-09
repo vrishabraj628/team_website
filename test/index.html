@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade and Slide Animation</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .fade-slide-image {
+            width: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+            opacity: 0; /* Start fully transparent */
+            transform: translateX(-300px); /* Start slightly left to its final position */
+            transition: opacity 1s ease , transform 0.5s ease-in-out; /* Smooth transition */
+        }
+
+        /* Add spacing for demo purposes */
+        .spacer {
+            height: 100vh; /* Spacer to create scroll effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="spacer"></div> <!-- Spacer to create scrolling effect -->
+
+    <div class="container">
+        <img src="../Assets/plane1.jpg" alt="Image 1" class="fade-slide-image">
+        <img src="../Assets/plane1.jpg" alt="Image 2" class="fade-slide-image">
+        <img src="../Assets/plane1.jpg" alt="Image 3" class="fade-slide-image">
+    </div>
+
+    <div class="spacer"></div> <!-- Spacer to create scrolling effect -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.fade-slide-image');
+            
+            // Set up Intersection Observer
+            const observerOptions = {
+                threshold: 0.5 // Image triggers animation when 50% visible
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateX(0)';
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe each image
+            images.forEach(image => observer.observe(image));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/*Removing pre existing formatting*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  position: relative;
+}
+html {
+  font-size: 7px;
+}
+
+/* Heading underlines */
+
+.line {
+  background-color: rgb(255, 0, 0);
+  height: 3px;
+  border-radius: 25px;
+  padding: 0%;
+  margin: 0% 3%;
+}
+.logo .line {
+  width: 230px;
+}
+.old-logo .line {
+  width: 400px;
+}
+/*Written content CSS*/
+.salutation {
+  width: 50%;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.main-content {
+  display: block;
+  padding: 2% 3%;
+  background: ghostwhite;
+}
+.para {
+  padding: 0px 10%;
+  font-size: 3rem;
+}
+.heading {
+  padding: 2% 3% 0 3%;
+  font-size: 6rem;
+}
+/*Written content CSS ends*/
+
+/*Hero image CSS*/
+.hero-image {
+  background-image: url("./Assets/sponsors.jpg");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+  /* border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+.hero-text {
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+  text-shadow: 0 0 10px #000;
+}
+.hero-text2 {
+  font-size: 5rem;
+  color: ghostwhite;
+}
+/*Hero image CSS ends*/
+
+.main-content {
+  display: block;
+  padding: 2% 3%;
+  background: ghostwhite;
+}
+.para {
+  text-align: justify;
+  padding: 0px 10%;
+  font-size: 3rem;
+}
+.heading {
+  padding: 2% 3% 0 3%;
+  font-size: 6rem;
+  text-align: center;
+}
+.logo {
+  justify-items: center;
+}
+.images {
+  width: 89vw;
+  padding: 10px 30px;
+  text-align: center;
+}
+.images-old {
+  width: 89vw;
+  padding: 10px 30px;
+  text-align: center;
+  height: 0;
+}
+
+.on-mob {
+  display: none;
+  width: 89vw;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.rondom{
+  display: flex;
+  width: 89vw;
+  justify-content: center;
+}
+.drop{
+  font-size: 5rem;
+  color: black;
+  padding-top: 2.7%;
+  
+}
+
+.old-logo {
+  justify-items: center;
+}
+.old-logo img {
+  padding: 20px;
+  height: 60px;
+}
+/* .old-logo .square{
+    aspect-ratio: 1/1;
+    width: 100px;
+}
+.old-logo .another{
+    aspect-ratio: 3/2;
+    width: 150px;
+} */
+.gold {
+  padding: 23px;
+  height: 37vh;
+}
+.silver {
+  padding: 23px;
+  height: 30vh;
+}
+.bronze {
+  padding: 20px;
+  height: 20vh;
+}
+
+/*For responsive appearence of nav bar on other devices*/
+@media (max-width: 430px) {
+  .logo .line {
+    width: 180px;
+  }
+  .old-logo .line {
+    width: 300px;
+  }
+  .logo img,
+  .old-logo img {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+  }
+  .old-logo .images {
+    display: none;
+  }
+  .on-mob {
+    display: block;
+  }
+  .smol-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .on-mob .smol-cont .smol {
+    width: 25%;
+    height: auto;
+  }
+  .old-logo .smol {
+    padding: 15px 15px;
+    height: auto;
+    width: 40%;
+  }
+
+  /* Hero image responsiveness */
+  .hero-image {
+    height: 42vh;
+    background-position: bottom;
+  }
+  .hero-text {
+    font-size: 3.3rem;
+  }
+  .heading {
+    padding: 2% 3% 0 3%;
+    font-size: 4rem;
+  }
+
+  /* Text responsiveness */
+  .para {
+    font-size: 2rem;
+  }
+
+  /* Vision Mission respo */
+  .container-2 {
+    display: block;
+  }
+}

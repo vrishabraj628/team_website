@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*Removing pre existing formatting*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    position: relative;
+    /* background-color: #000; */
+}
+html{
+    font-size: 7px;
+}
+
+/* Heading underlines */
+
+.line{
+    background-color: rgb(255, 0, 0);
+    height: 3px;
+    width: 230px;
+    border-radius: 25px;
+    padding: 0%;
+    margin: 0% 3%;
+}
+
+/*Hero image CSS*/
+.hero-image {
+    background-image: url("./Assets/team2012-2013.JPG");
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+.hero-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ghostwhite;
+  }
+.hero-text2{
+    font-size: 5rem;
+    color: ghostwhite;
+  }
+/*Hero image CSS ends*/
+/* Font CSS */
+
+.para{
+    font-size: 3rem;
+    padding: 5%;
+}
+.para-1{
+    font-size: 3rem;
+}
+.heading{
+    font-size: 6rem;
+    padding: 2% 3% 0 3%;
+}
+
+
+/* Container CSS */
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    margin: 0 10px 20px;
+}
+.gallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.gallery .tall {
+    grid-row: span 2;
+}
+
+
+
+
+
+
+
+.no-scroll {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0.5% 5%;
+}
+.nav .img img {
+  filter: invert(1);
+  width: 200px;
+  height: auto;
+  display: block;
+}
+.nav .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 400;
+  gap: 10px;
+  color: ghostwhite;
+  cursor: pointer;
+  position: relative;
+}
+.nav .menu .hamburger {
+  border-style: none;
+  background-color: transparent;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* justify-content: space-between; */
+  align-items: center;
+  scale: 0.8;
+}
+.nav .menu .hamburger .lineup {
+  width: 21px;
+  height: 2px;
+  background-color: ghostwhite;
+  align-self: flex-start; /* Align to the left */
+  /* margin: 4px; */
+}
+.nav .menu .hamburger .linemiddle {
+  width: 42px;
+  height: 2px;
+  background-color: ghostwhite;
+  /* margin: 4px; */
+}
+.nav .menu .hamburger .linedown {
+  width: 21px;
+  height: 2px;
+  background-color: ghostwhite;
+  align-self: flex-end; /* Align to the right */
+  /* margin: 4px; */
+}
+
+.nav .menu .hamburger.active .lineup {
+  transform: rotate(45deg) translate(1.5px, -1.5px); /* Adjusted translate values */
+}
+
+.nav .menu .hamburger.active .linemiddle {
+  transform: rotate(-45deg); /* Adjusted translate values */
+}
+
+.nav .menu .hamburger.active .linedown {
+  transform: rotate(45deg) translate(-1.5px, 1.5px); /* Adjusted translate values */
+}
+
+.nav .menu .hamburger .lineup,
+.nav .menu .hamburger .linemiddle,
+.nav .menu .hamburger .linedown {
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.nav .close {
+  padding: 15px 0 0 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 100;
+  height: 100vh;
+  width: 20vw;
+  display: none;
+  justify-self: end;
+  align-items: start;
+  position: fixed;
+  /* box-shadow: 0 0 20px rgba(255, 250, 250, 0.1); */
+  backdrop-filter: blur(5px);
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.nav .menu .close ul li {
+  list-style: none;
+}
+
+.nav .menu .close ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.nav .menu .close ul li a::before,
+.nav .menu .close ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: ghostwhite;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  transition: width 0.8s;
+}
+
+.nav .menu .close ul li a::before {
+  left: 45%;
+}
+
+.nav .menu .close ul li a::after {
+  right: 45%;
+}
+
+.nav .menu .close ul li a:hover::before,
+.nav .menu .close ul li a:hover::after {
+  width: 45%;
+}
+
+@media (max-width: 430px) {
+  .close {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    justify-content: center;
+    text-align: center;
+  }
+  .nav .img img {
+    width: 110px;
+  }
+  .nav .menu {
+    font-size: 2rem;
+  }
+  
+  .nav .menu .hamburger .lineup {
+    width: 20px;
+  }
+  .nav .menu .hamburger .linemiddle {
+    width: 40px;
+  }
+  .nav .menu .hamburger .linedown {
+    width: 20px;
+  }
+  
+  .nav .menu .hamburger.active .lineup {
+    transform: rotate(45deg) translate(1.5px, -1.5px); /* Adjusted translate values */
+  }
+  
+  .nav .menu .hamburger.active .linemiddle {
+    transform: rotate(-45deg); /* Adjusted translate values */
+  }
+  
+  .nav .menu .hamburger.active .linedown {
+    transform: rotate(45deg) translate(-1.5px, 1.5px); /* Adjusted translate values */
+  }
+}
+/* .active::before,
+.active::after{
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+} */

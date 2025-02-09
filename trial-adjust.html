@@ -1,0 +1,28 @@
+<form id="googleForm">
+    <input type="text" placeholder="F name" name="entry.2121578343" required> 
+    <input type="text" placeholder="L name" name="entry.1159097365" required> 
+    <input type="text" placeholder="Mail" name="entry.974209459" required> 
+    <input type="text" placeholder="Mobile" name="entry.1469111093" required> 
+    <input type="text" placeholder="Comments" name="entry.2050938219" required> 
+    <button type="submit">Submit</button>
+</form>
+
+<p id="successMessage" style="display:none; color: green;">Form submitted successfully!</p>
+
+<script>
+document.getElementById("googleForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    let form = event.target;
+    let formData = new FormData(form);
+    
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc93j2SOsiAOC0zsgWHB4v9s2ki1n6HeZZna8YGlmiSQHXIGA/formResponse", {
+        method: "POST",
+        mode: "no-cors", // Prevents CORS errors
+        body: formData
+    }).then(() => {
+        document.getElementById("successMessage").style.display = "block"; // Show success message
+        form.reset(); // Clear the form after submission
+    }).catch(error => console.error("Error:", error));
+});
+</script>

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/*Removing pre existing formatting*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  position: relative;
+  /* background-color: #000; */
+  color: rgb(10, 10, 10);
+}
+html {
+  font-size: 7px;
+}
+main {
+  background-color: white;
+}
+
+/*Hero image CSS*/
+.hero-image {
+  background-image: url("./Assets/history_hero.jpg");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+  text-shadow: 0 0 10px #000;
+
+}
+.hero-text2 {
+  font-size: 5rem;
+  color: ghostwhite;
+}
+/*Hero image CSS ends*/
+
+.para-1 {
+  padding: 2%;
+  justify-content: center;
+  align-content: start;
+  font-size: 3rem;
+}
+.main-content {
+  display: block;
+  padding: 2% 3%;
+  padding-top: 50px;
+}
+.para {
+  text-align: justify;
+  padding: 25px 10%;
+  font-size: 3rem;
+}
+
+
+.img-align{
+  justify-content: center;
+}
+.img-align a{
+  color: black;
+  text-decoration: none;
+  height: 100%;
+  width: 80%;
+}
+.year {
+  margin-left: 5%;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Assets/team2012-2013.png);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 95%; /*Tweek for visibility*/
+}
+
+.t2013{
+  background-image: url(./Assets/team2013-2014.png);
+}
+.t2014{
+  background-image: url(./Assets/team2014-2015.png);
+}
+.t2015{
+  background-image: url(./Assets/team2015-2016.png);
+}
+.t2016{
+  background-image: url(./Assets/team2016-2017.png);
+}
+.t2017{
+  background-image: url(./Assets/team2017-2018.png);
+}
+.t2018{
+  background-image: url(./Assets/team2018-2019.png);
+}
+.t2019{
+  background-image: url(./Assets/team2013-2014.png);
+}
+.t2020{
+  background-image: url(./Assets/team2020-2021.png);
+}
+.t2021{
+  background-image: url(./Assets/team2021-2022.png);
+}
+.t2022{
+  background-image: url(./Assets/team2022-2023.png);
+}
+.t2023{
+  background-image: url(./Assets/team2023-2024.png);
+}
+.text{
+  font-size: 10rem;
+  color: white;
+  text-shadow: 0 0 10px #000;
+}
+
+
+
+@media (max-width: 430px) {
+  /* Hero image responsiveness */
+  .hero-image {
+    height: 42vh;
+    background-position: bottom;
+  }
+  .hero-text {
+    font-size: 3.3rem;
+  }
+  .heading {
+    padding: 2% 3% 0 3%;
+    font-size: 4rem;
+  }
+
+  /* Text responsiveness */
+  .para {
+    font-size: 2rem;
+  }
+
+  .year{
+    background-attachment: scroll;
+    margin: 0 0 10px;
+    height: 35vh;
+    width: 100%;
+    background-size: 100%;
+  }
+  .text{
+    font-size: 6rem;
+  }
+}

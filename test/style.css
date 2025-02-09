@@ -1,0 +1,261 @@
+/*Footer CSS*/
+
+/* footer{
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 50%;
+  background-color: #2d2e33;
+  padding: 20px 5%;
+}
+footer .map{
+  width: 95%;
+  height: 100%;
+}
+footer ul{
+  list-style: none;
+}
+
+.foot-col h4{
+  position: relative;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #f1bc0d;
+  text-transform: capitalize;
+}
+.foot-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #27c0ac;
+  height: 2px;
+  width: 40px;
+}
+footer li:not(:last-child){
+  margin-bottom: 8px;
+}
+footer li a{
+  display: block;
+  font-size: 19px;
+  text-transform: capitalize;
+  color: #bdb6b6;
+  text-decoration: none;
+  transition: 0.4s;
+}
+footer li a:hover{
+  color: white;
+  scale: 110%;
+}
+.links a{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  color: white;
+  background-color: rgba(40, 140, 214, 0.8);
+  margin: 0 8px 8px 0;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.links a:hover{
+  color: #4d4f55;
+  background-color: white;
+}
+
+@media(max-width: 740px){
+  .foot-col{
+      width: 50%;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  .foot-col h4::before{
+      all: unset;
+
+  }
+}
+@media(max-width: 555px){
+  .foot-col{
+      width: 100%;
+  }
+} */
+/*Footer CSS ends*/
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  /* min-height: 100vh;
+  position: relative; */
+  background-color: #eef8ff ;
+}
+/* html{
+  font-size: 7px;
+} */
+.row img{
+  
+  width: 100%;
+  aspect-ratio: 3/1;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c,#2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 1rem;
+  line-height: 20px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+  flex-basis: 8%;
+}
+.logo{
+  filter: invert(1);
+  width: 100% ;
+  margin-bottom: 30px;
+}
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .fa-regular{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width: 100%;
+  background: transparent;
+  color: #CCC;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .fa-solid{
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icon .fab{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copyright{
+  text-align: center;
+}
+.underline{
+  width: 100%;
+  height: 2px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+.cnt-btn{
+  padding: 0 0 10px 80px;
+}
+.contact{
+  height: 50px;
+  width: 45%;
+  border-radius: 35px;
+  font-weight: 540;
+  border: none;
+  transition: 0.2s;
+}
+.contact:hover{
+  background-color: black ;
+  color: white;
+}
+
+
+@keyframes moving {
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer{
+    bottom: unset;
+  }
+  .col{
+    flex-basis: 100%;
+  }
+  .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 100%;
+  }
+}

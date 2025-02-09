@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/*Removing pre existing formatting*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", serif;
+  font-weight: 500;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+html {
+  font-size: 7px;
+}
+/* Heading underlines */
+
+.line {
+  background-color: rgb(255, 0, 0);
+  height: 3px;
+  border-radius: 25px;
+  padding: 0%;
+  margin: 2% 7%;
+}
+
+/*Written content CSS*/
+.salutation {
+  width: 50%;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.main-content {
+  display: block;
+  padding: 2% 3%;
+  background: ghostwhite;
+}
+.para {
+  padding: 0px 10%;
+  font-size: 3rem;
+}
+.heading {
+  padding: 2% 7% 0 7%;
+  font-size: 6rem;
+  /* text-align: center; */
+}
+/*Written content CSS ends*/
+
+/*Hero image CSS*/
+.hero-image {
+  background-image: url("./Assets/marut_v2_edited.jpg");
+  height: 95vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+.hero-text {
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+  text-shadow: 0 0 10px #000;
+}
+.hero-text2 {
+  font-size: 5rem;
+  color: ghostwhite;
+}
+/*Hero image CSS ends*/
+
+.for_pics{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+.for_pics .lightBox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  display: none;
+}
+.lightBox .lightBox_content{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  height: 80vh;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.lightBox_content .close{
+  position: absolute;
+  top: 0;
+  left: -40px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.lightBox_content .close:hover{
+  opacity: 1;
+}
+/* section .logo_icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+section .logo_icons a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+section .logo_icons .logoImg{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+section .logo_icons .text_content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+.logo_icons .text_content .followers{
+  font-size: 13px;
+  margin-top: -5px;
+}
+section .logo_icons .icons i{
+  height: 35px;
+  width: 35px;
+  background: #ccc;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.lightBox .logo_icons .icons i:hover{
+  color: #fff;
+  background: #7d2ae8;
+} */
+.for_pics .lightBox .showImg{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.lightBox .showImg .image{
+  max-height: 90vh;
+  max-width: 90vw;
+}
+.showImg .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.for_pics .image-gallery{
+  max-width: 1300px;
+  min-height: 100vh;
+  width: 100%;
+  background: #fff;
+  margin: auto;
+}
+
+.image-gallery .image-container{
+  columns: 3;
+  margin-top: 20px;
+  gap: 15px;
+}
+.image-container img{
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.image-container .image-box{
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+}
+/* .image-box .logo_icons{
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.image-box:hover .logo_icons{
+  opacity: 1;
+  pointer-events: auto;
+}
+.image-box .logo_icons .icons i{
+  color: #b4b4b4;
+  background: #fff;
+}
+.logo_icons .icons i:hover{
+  color: #707070;
+}
+section .image-gallery .logo_icons .text_content{
+  color: #fff;
+  font-size: 14px
+} */
+.for_pics .image-gallery .text_content .followers{
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: -4px;
+}
+@media (max-width: 1034px) {
+  .lightBox_content .close{
+    top: -40px;
+    left: 10px;
+  }
+}
+@media (max-width: 1002px) {
+  .image-gallery .image-container{
+    columns: 2;
+  }
+}
+@media (max-width: 602px) {
+  .image-gallery .image-container{
+    columns: 1;
+  }
+  .image-container .image-box{
+    padding: 0 7px;
+  }
+}
+@media (max-width: 430px) {
+  /* Hero image responsiveness */
+  .hero-image {
+    height: 42vh;
+    background-position: bottom;
+  }
+  .hero-text {
+    font-size: 3.3rem;
+  }
+  .heading {
+    padding: 2% 3% 0 3%;
+    font-size: 4rem;
+  }
+  .image-gallery .image-container{
+    columns: 2;
+    gap: 0px;
+  }
+  .lightBox .lightBox_content{
+    height: 80vh;
+    width: 85%;
+  }
+}

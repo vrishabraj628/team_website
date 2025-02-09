@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/*Removing pre existing formatting*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  position: relative;
+}
+html {
+  font-size: 7px;
+}
+
+/* Heading underlines */
+
+.line {
+  background-color: rgb(255, 0, 0);
+  height: 3px;
+  border-radius: 50px;
+  padding: 0%;
+  margin: 0% 3%;
+}
+.container-1 .line {
+  width: 550px;
+}
+.content-2:nth-child(1) .line {
+  width: 125px;
+}
+.content-2:nth-child(2) .line {
+  width: 155px;
+}
+.container-3 .line {
+  width: 430px;
+}
+/*Written content CSS*/
+.salutation {
+  width: 50%;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.main-content {
+  display: block;
+  padding: 2% 3%;
+  background: ghostwhite;
+  padding-top: 50px;
+}
+.para {
+  padding: 0px 10%;
+  font-size: 3rem;
+  text-align: justify;
+}
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-2 {
+  /* display: flex; */
+  padding: 3%;
+  align-items: center;
+}
+.content-2 .support-image {
+  height: 300px;
+  width: 300px;
+  padding: 0 10%;
+}
+.heading {
+  padding: 2% 3% 0 3%;
+  font-size: 6rem;
+}
+/*Written content CSS ends*/
+
+/*Hero image CSS*/
+.hero-image {
+  background-image: url("./Assets/his2024/dbf\ plane\ usa.jpg");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+  text-shadow: 0 0 10px #000;
+}
+.hero-text2 {
+  font-size: 5rem;
+  color: ghostwhite;
+}
+/*Hero image CSS ends*/
+
+/*Achievement card CSS starts*/
+.container-1 {
+  background-color: rgb(119, 181, 254, 0.6);
+}
+
+.card-wrapper {
+  /* max-width: 1100px; */
+  margin: 35px 60px 35px;
+  /* padding: 20px 10px; */
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+  max-width: 500px;
+}
+
+.card-list .card-item .card-link {
+  position: relative;
+  user-select: none;
+  display: block;
+  background: #fff;
+  width: 350px;
+  min-height: 460px;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(00, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: rgb(65, 105, 225);
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 7/5;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: rgb(65, 105, 225);
+  padding: 8px 16px;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 16px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.history {
+  color: #a67c00;
+  background: #ffbf00;
+}
+
+.card-list .card-link .badge.current {
+  color: #234f1e;
+  background: #99edc3;
+}
+
+.card-list .card-link .card-title {
+  font-size: 3rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 35px;
+  width: 35px;
+  color: rgb(65, 105, 225);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid rgb(65, 105, 225);
+  transform: rotate(-45deg);
+  transition: 0.4 ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: rgb(65, 105, 225);
+}
+
+.card-wrapper .swiper-slide-button {
+  color: rgb(65, 105, 225);
+  /* margin-top: -35px; */
+}
+/*Achievement CSS ends*/
+
+/*Social section css*/
+.container-3 {
+  display: block;
+  /* padding: 1% 4%; */
+  background-color: rgb(119, 181, 254, 0.6);
+}
+.social-posts {
+  display: flex;
+  padding: 1% 4%;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.social-posts div {
+  width: 500px;
+  height: 760px;
+}
+
+/*For responsive appearence of achevement carousel on other devices*/
+@media screen and (max-width: 768px) {
+  .container-1 .line {
+    width: 85vw;
+    margin-bottom: 10px;
+  }
+  .card-wrapper {
+    margin: 0 10px 25px 10px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .container-1 .line {
+    width: 375px;
+  }
+  .content-2:nth-child(1) .line {
+    width: 82px;
+  }
+  .content-2:nth-child(2) .line {
+    width: 105px;
+  }
+  .container-3 .line {
+    width: 290px;
+  }
+  /* Hero image responsiveness */
+  .hero-image {
+    height: 42vh;
+    background-position: bottom;
+  }
+  .hero-text {
+    font-size: 3.3rem;
+  }
+  .hero-text2 {
+    font-size: 1.7rem;
+    color: ghostwhite;
+  }
+  .heading {
+    padding: 2% 3% 0 3%;
+    font-size: 4rem;
+  }
+
+  /* Text responsiveness */
+  .salutation {
+    width: auto;
+    font-size: 2.5rem;
+  }
+  .para {
+    font-size: 2rem;
+  }
+  /* Achievements respo */
+  .card-list .card-link .card-title {
+    font-size: 2rem;
+  }
+  .card-list .card-link .badge {
+    font-size: 1.5rem;
+    margin: 5px 0 5px;
+  }
+.card-list .card-item .card-link {
+    min-height: 390px;
+}
+
+  /* Vision Mission respo */
+  .container-2 {
+    display: block;
+  }
+
+  /*Social Responsiveness*/
+  .social-posts {
+    display: block;
+    padding: 3% 5%;
+  }
+  .social-posts div {
+    width: 90vw;
+    height: auto;
+  }
+  .social-posts div:nth-child(2) {
+    height: 770px;
+  }
+}
+
+/* #scrollbar1::-webkit-scrollbar {
+    position: absolute;
+    width: 16px;
+    background-color:  transparent;
+  }
+  
+  #scrollbar1::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color:  transparent;
+    border: 1px solid transparent;
+  }
+  
+  #scrollbar1::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+  border: 3px solid transparent;
+   background-clip: content-box;
+    background-color: rgb(65,105,225);
+  } */

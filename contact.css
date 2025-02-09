@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*Removing pre existing formatting*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  position: relative;
+}
+html {
+  font-size: 7px;
+}
+/* Heading underlines */
+
+.line {
+  background-color: rgb(255, 0, 0);
+  height: 3px;
+  width: 475px;
+  border-radius: 25px;
+  padding: 0%;
+  margin: 0% 3%;
+}
+/*Written content CSS*/
+
+/*Written content CSS ends*/
+
+/*Hero image CSS*/
+.hero-image {
+  background-image: url("./Assets/contact_stock.jpg");
+  height: 95vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+}
+.hero-text2 {
+  font-size: 5rem;
+  color: ghostwhite;
+}
+/*Hero image CSS ends*/
+
+.main-content {
+  display: block;
+  padding: 2% 3%;
+  background: ghostwhite;
+  padding-top: 50px;
+}
+.para {
+  padding: 0px 10%;
+  font-size: 3rem;
+}
+.heading {
+  padding: 2% 3% 0 3%;
+  font-size: 6rem;
+  text-align: center;
+}
+
+/* Form box CSS */
+/* .pla{ */
+  /* padding: 30px; */
+/* } */
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  height: 95vh;
+  width: 100vw;
+}
+
+/* Form image CSS */
+
+.contact-form .support-image {
+  height: 100%;
+  overflow: hidden;
+}
+.contact-form .support-image img {
+  height: 100%;
+}
+
+/* Form CSS */
+
+.form {
+  padding: 10px 50px;
+  background: #fff;
+}
+.form h2 {
+  font-size: 4.5rem;
+  color: #333;
+  font-weight: 500;
+}
+.form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.form .inputBox input,
+.form .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 3.5rem;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.form .inputBox textarea {
+    height: 150px;
+}
+.form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 3rem;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.form .inputBox input:focus ~ span,
+.form .inputBox input:valid ~ span,
+.form .inputBox textarea:focus ~ span,
+.form .inputBox textarea:valid ~ span {
+  color: #142cff;
+  font-size: 2rem;
+  transform: translateY(-20px);
+}
+.form .inputBox input[type="submit"] {
+  width: auto;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px 40px;
+  font-size: 3.5rem;
+  border-radius: 15px;
+}
+
+/* Links CSS */
+
+/* .links{
+  margin-right: 20px;
+} */
+.links ul{
+    list-style: none;
+}
+.links ul li:nth-child(2), .links ul li:nth-child(3){
+  display: flex;
+  align-items: center;
+}
+.links ul li a{
+    color: #000;
+    font-size: 3rem;
+}
+.links ul li iframe{
+  border-style: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  aspect-ratio: 1.5/1;
+  width: 29vw;
+}
+.links ul li i{
+    font-size: 5.5rem;
+    padding-right: 2rem;
+}
+
+
+
+/*For responsive appearence of nav bar on other devices*/
+@media (max-width: 960px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
