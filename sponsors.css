@@ -19,7 +19,7 @@ html {
 /* Heading underlines */
 
 .line {
-  background-color: rgb(255, 0, 0);
+  background-color: #0d2b71;
   height: 3px;
   border-radius: 25px;
   padding: 0%;
@@ -170,6 +170,10 @@ html {
     width: 100%;
     height: auto;
     padding: 15px 0;
+  }
+  .logo .square{
+    max-height: 30vh;
+    width: auto;
   }
   .old-logo .images {
     display: none;

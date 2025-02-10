@@ -18,7 +18,7 @@ html {
 /* Heading underlines */
 
 .line {
-  background-color: rgb(255, 0, 0);
+  background-color: #0d2b71;
   height: 3px;
   border-radius: 25px;
   padding: 0%;

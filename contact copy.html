@@ -95,24 +95,54 @@
 
           <div class="googleForm">
             <h3 class="heading">Send Message</h3>
-            <p class="para">Send us a message for any questions you may have related to our team.</p>
+            <p class="para">
+              Send us a message for any questions you may have related to our
+              team.
+            </p>
             <form id="googleForm">
-                <div class="row50">
-                    <input type="text" name="entry.2121578343" placeholder="First Name" required />
-                    <input type="text" name="entry.1159097365" placeholder="Last Name" required />
-                </div>
-                <div class="row50">
-                    <input type="email" name="entry.974209459" placeholder="Email" required />
-                    <input type="text" name="entry.1469111093" placeholder="Mobile No." required />
-                </div>
-                <div class="row100">
-                    <textarea name="entry.2050938219" placeholder="Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </div>
+              <div class="row50">
+                <input
+                  type="text"
+                  name="entry.2121578343"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="entry.1159097365"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div class="row50">
+                <input
+                  type="email"
+                  name="entry.974209459"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  name="entry.1469111093"
+                  placeholder="Mobile No."
+                  required
+                />
+              </div>
+              <div class="row100">
+                <textarea
+                  name="entry.2050938219"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button type="submit">Send Message</button>
+              </div>
             </form>
-            <p class="successMessage" class="para" style="display: none; color: green;">Your Message has been recorded!!</p>
+            <p
+              class="successMessage"
+            >
+              Your Message has been recorded!!
+            </p>
           </div>
-
 
           <div class="contact-details on-pc">
             <div class="contact-box">
@@ -150,7 +180,7 @@
         <!-- <br /> -->
         <!-- <p class="para"></p> -->
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1374.9637343901372!2d77.56569059968942!3d12.908703376263432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1735570849030!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9828249308534!2d77.56573917411927!3d12.908825316253411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158e1d283289%3A0x886cc8ed4cc691bc!2sTeam%20Arcis!5e0!3m2!1sen!2sin!4v1739200719532!5m2!1sen!2sin"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -180,22 +210,29 @@
       });
     </script>
     <script>
-      document.getElementById("googleForm").addEventListener("submit", function(event) {
+      document
+        .getElementById("googleForm")
+        .addEventListener("submit", function (event) {
           event.preventDefault(); // Prevent default form submission
-      
+
           let form = event.target;
           let formData = new FormData(form);
-          
-          fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc93j2SOsiAOC0zsgWHB4v9s2ki1n6HeZZna8YGlmiSQHXIGA/formResponse", {
+
+          fetch(
+            "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc93j2SOsiAOC0zsgWHB4v9s2ki1n6HeZZna8YGlmiSQHXIGA/formResponse",
+            {
               method: "POST",
               mode: "no-cors", // Prevents CORS errors
-              body: formData
-          }).then(() => {
+              body: formData,
+            }
+          )
+            .then(() => {
               document.querySelector(".successMessage").style.display = "block"; // Show success message
               form.reset(); // Clear form after submission
-          }).catch(error => console.error("Error:", error));
-      });
-      </script>
+            })
+            .catch((error) => console.error("Error:", error));
+        });
+    </script>
     <script src="nav-bar.js"></script>
     <script src="all.js"></script>
 
