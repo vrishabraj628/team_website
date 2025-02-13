@@ -21,12 +21,13 @@
   </head>
   <body>
     <main>
+      <button id="backToTop">↑ Top</button>
       <section>
         <div class="hero-image">
           <!--Nav and sidebar-->
           <div class="nav">
             <div class="img">
-              <img src="./Assets/Untitled design.png" alt="Arcis" />
+              <a href="./index.html"><img src="./Assets/Untitled design.png" alt="Arcis" /></a>
             </div>
             <div class="menu">
               Menu
@@ -136,7 +137,7 @@
               </tr>
               <tr>
                 <th>MTOGW</th>
-                <td>4.83 kgs</td>
+                <td>4.83 kg</td>
                 <td>10.66 lbs</td>
               </tr>
               <tr>
@@ -239,6 +240,27 @@
       </section>
     </main>
     <!--Linking custom script-->
+    <script>
+      // Select the button
+      let backToTopBtn = document.getElementById("backToTop");
+
+      // Show the button when scrolling down
+      window.onscroll = function () {
+          if (document.documentElement.scrollTop > 300) { // Adjust when it appears
+              backToTopBtn.style.display = "block";
+          } else {
+              backToTopBtn.style.display = "none";
+          }
+      };
+
+      // Smooth scroll to top when button is clicked
+      backToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+    </script>
     <script>
       // For Navigation Hamburger
       const hamburger = document.querySelector(".hamburger");

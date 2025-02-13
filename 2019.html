@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2019-20 | Team Arcis</title>
     <!--Linking stylesheet-->
-    <link rel="stylesheet" href="./2019.css">
-    <link rel="stylesheet" href="nav-bar.css">
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./2019.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="./footer.css" />
     <link rel="stylesheet" href="./history_diplay.css" />
     <!---->
-    <link rel="icon" type="image/x-icon" href="./Assets/logo_circle_icon.ico">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./Assets/logo_circle_icon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!--Linking google fonts for icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <!--Linking SwiperJS CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <section>
-            <div class="hero-image">
-                <!--Nav and sidebar-->
-                <div class="nav">
-                    <div class="img">
-                        <img src="./Assets/Untitled design.png" alt="Arcis">
-                      </div>
-                      <div class="menu">
-                        Menu
-                        <div class="hamburger" >
-                          <div class="lineup"></div>
-                          <div class="linemiddle"></div>
-                          <div class="linedown"></div>  
-                        </div>
-                        <div class="close" >
-                          <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="our-team.html">Team</a></li>
-                            <li><a href="Sponsor.html">Sponsor</a></li>
-                            <li><a href="history copy.html">History</a></li>
-                            <li><a href="gallery copy.html">Gallery</a></li>
-                            <li><a href="contact copy.html" class="active">Contact</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                </div>
-                <div class="hero-text">
-                    <h1>2017-2020</h1>
-                </div>
+      <section>
+        <div class="hero-image">
+          <!--Nav and sidebar-->
+          <div class="nav">
+            <div class="img">
+              <a href="./index.html"><img src="./Assets/Untitled design.png" alt="Arcis" /></a>
             </div>
-        </section>
-        <div style="height: 100%; width: 100%; display: flex; justify-content: center;">
-            <img src="./Assets/under.gif" alt="">
+            <div class="menu">
+              Menu
+              <div class="hamburger">
+                <div class="lineup"></div>
+                <div class="linemiddle"></div>
+                <div class="linedown"></div>
+              </div>
+              <div class="close">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="our-team.html">Team</a></li>
+                  <li><a href="Sponsor.html">Sponsor</a></li>
+                  <li><a href="history copy.html">History</a></li>
+                  <li><a href="gallery copy.html">Gallery</a></li>
+                  <li>
+                    <a href="contact copy.html" class="active">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hero-text">
+            <h1>2017-2020</h1>
+          </div>
         </div>
-        <!-- <section>
+      </section>
+      <div
+        style="
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        <img src="./Assets/under.gif" alt="" />
+      </div>
+      <!-- <section>
             <div class="main-comtent">
                 <br>
                 <p class="para">Since our inception in the year 2021 we have been constantly participating in various national and international competitions, hoaning and improving our skill, constantly improving and bettering ourself to keep up with the growing competition. Below is a collection where you can find everything that our team has been involved in and acomplished through out the years. </p>
@@ -119,71 +141,92 @@
     </main>
     <!--Linking custom script-->
     <script>
-        const hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", () => {
-          const closeMenu = document.querySelector(".close");
-          const body = document.querySelector("body");
-          if (closeMenu.style.display === "flex") {
-            closeMenu.style.width = "0px";
-            closeMenu.style.display = "none";
-            body.classList.remove("no-scroll");
-          } else {
-            closeMenu.style.display = "flex";
-            closeMenu.style.width = "20vw";
-            body.classList.add("no-scroll");
-          }
-        });
-      </script>
+      const hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", () => {
+        const closeMenu = document.querySelector(".close");
+        const body = document.querySelector("body");
+        if (closeMenu.style.display === "flex") {
+          closeMenu.style.width = "0px";
+          closeMenu.style.display = "none";
+          body.classList.remove("no-scroll");
+        } else {
+          closeMenu.style.display = "flex";
+          closeMenu.style.width = "20vw";
+          body.classList.add("no-scroll");
+        }
+      });
+    </script>
     <script src="nav-bar.js"></script>
     <script src="all.js"></script>
-    
+
     <footer>
-        <div class="row">
-            <div class="col">
-                <img src="./Assets/Untitled design.png" alt="">
-            </div>
-            <div class="col">
-                <h3>Address <div class="underline"><span></span></div></h3>
-                <p>Room No. 501, NEB</p>
-                <p>Dayananda Sagar College of Engineering</p>
-                <p>Shavige Malleshwara Hills</p>
-                <p>91st Main Rd, 1st Stage</p>
-                <p>Kumaraswamy Layout</p>
-                <p>Bengaluru, Karnataka 560078</p>
-                <h4 class="email">teamarcis@dayanandasagar.edu</h4>
-                <h4><a href="tel:+918296187237">+91-82961 87237</a><br/><a href="tel:+918888422900">+91-88884 22900</a></h4>
-              </div>
-            <div class="col">
-                <h3>Links <div class="underline"><span></span></div></h3>
-                <ul>
-                    <li><a href="our-team.html">Our Team</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    <li><a href="gallery copy.html">Gallery</a></li>
-                    <li><a href="history copy.html">Legacy</a></li>
-                    <li><a href="contact copy.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <!-- <h3>Newsletter <div class="underline"><span></span></div></h3> -->
-                <!-- <form>
+      <div class="row">
+        <div class="col">
+          <img src="./Assets/Untitled design.png" alt="" />
+        </div>
+        <div class="col">
+          <h3>
+            Address
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Room No. 501, NEB</p>
+          <p>Dayananda Sagar College of Engineering</p>
+          <p>Shavige Malleshwara Hills</p>
+          <p>91st Main Rd, 1st Stage</p>
+          <p>Kumaraswamy Layout</p>
+          <p>Bengaluru, Karnataka 560078</p>
+          <h4 class="email">teamarcis@dayanandasagar.edu</h4>
+          <h4>
+            <a href="tel:+918296187237">+91-82961 87237</a><br /><a
+              href="tel:+918888422900"
+              >+91-88884 22900</a
+            >
+          </h4>
+        </div>
+        <div class="col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="gallery copy.html">Gallery</a></li>
+            <li><a href="history copy.html">Legacy</a></li>
+            <li><a href="contact copy.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <!-- <h3>Newsletter <div class="underline"><span></span></div></h3> -->
+          <!-- <form>
                     <i class="fa-regular fa-envelope"></i>
                     <input type="email" placeholder="Enter your email id" required>
                     <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
                 </form> -->
-                <div class="cnt-btn">
-                    <button class="contact">Contact Us</button>
-                </div>
-                <div class="social-icon">
-                    <!-- <i class="fab fa-brands fa-facebook-f"></i> -->
-                    <a href="https://www.youtube.com/channel/UCgNXVEqEhOzzWZ6XdZAd-1A"><i class="fab fa-brands fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/company/team-arcis/posts/?feedView=all"><i class="fab fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://teamarcis.medium.com/"><i class="fab fa-brands fa-medium"></i></a>
-                    <a href="https://www.behance.net/team_arcis"><i class="fab fa-brands fa-behance"></i></a>
-                    <a href="https://www.instagram.com/teamarcis/"><i class="fab fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
+          <div class="cnt-btn">
+            <button class="contact">Contact Us</button>
+          </div>
+          <div class="social-icon">
+            <!-- <i class="fab fa-brands fa-facebook-f"></i> -->
+            <a href="https://www.youtube.com/channel/UCgNXVEqEhOzzWZ6XdZAd-1A"
+              ><i class="fab fa-brands fa-youtube"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/team-arcis/posts/?feedView=all"
+              ><i class="fab fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://teamarcis.medium.com/"
+              ><i class="fab fa-brands fa-medium"></i
+            ></a>
+            <a href="https://www.behance.net/team_arcis"
+              ><i class="fab fa-brands fa-behance"></i
+            ></a>
+            <a href="https://www.instagram.com/teamarcis/"
+              ><i class="fab fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

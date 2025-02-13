@@ -4,6 +4,26 @@
 ::-webkit-scrollbar {
   display: none;
 }
+#backToTop {
+  z-index: 9999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden initially */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+}
 .nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0));
   background-position: top;
