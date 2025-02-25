@@ -583,6 +583,8 @@
         </div>
       </section>
     </main>
+    <script src="nav-bar.js"></script>
+    <script src="all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typingeffect = new Typed(".multitext", {
@@ -600,6 +602,7 @@
     <script>
       // Select the button
       let backToTopBtn = document.getElementById("backToTop");
+      let footBackToTop = document.getElementById("footer-logo")
 
       // Show the button when scrolling down
       window.onscroll = function () {
@@ -617,37 +620,21 @@
               behavior: "smooth"
           });
       });
-    </script>
-    <script>
-        // For Navigation Hamburger
-        const hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", () => {
-        const closeMenu = document.querySelector(".close");
-        const body = document.querySelector("body");
-        const vw = window.innerWidth;
-        if (closeMenu.style.display === "flex") {
-          closeMenu.style.display = "none";
-          body.classList.remove("no-scroll");
-        } else {
-          closeMenu.style.display = "flex";
-          body.classList.add("no-scroll");
-          if (vw <= 430){
-            closeMenu.style.width = "100vw";
-          }
-          else{
-            closeMenu.style.width = "20vw";
-          }
-        }
+
+      footBackToTop.addEventListener("click", function () {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
       });
     </script>
-    <script src="nav-bar.js"></script>
-    <script src="all.js"></script>
+
 
     <footer>
       <!-- <i class="fab fa-brands fa-medium"></i> -->
       <div class="row">
         <div class="col">
-          <img src="./Assets/Untitled design.png" alt="" class="logo" />
+          <img src="./Assets/Untitled design.png" alt="" class="logo" id="footer-logo"/>
         </div>
         <div class="col">
           <h3>

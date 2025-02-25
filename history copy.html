@@ -137,6 +137,7 @@
     <script>
       // Select the button
       let backToTopBtn = document.getElementById("backToTop");
+      let footBackToTop = document.getElementsByClassName("footer-logo")
 
       // Show the button when scrolling down
       window.onscroll = function () {
@@ -149,6 +150,13 @@
 
       // Smooth scroll to top when button is clicked
       backToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+
+      footBackToTop.addEventListener("click", function () {
           window.scrollTo({
               top: 0,
               behavior: "smooth"
