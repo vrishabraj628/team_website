@@ -166,6 +166,18 @@ footer .row .col img {
 .social-icon .fab:hover {
   transform: scale(1.15);
 }
+.social-icon .yt:hover{
+  color: red;
+}
+.social-icon .li:hover{
+  color: #0077b5;
+}
+.social-icon .be:hover{
+  color: #053eff;
+}
+.social-icon .ig:hover{
+  color: red;
+}
 hr {
   width: 90%;
   border: 0;

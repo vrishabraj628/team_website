@@ -112,12 +112,9 @@ html {
   /* padding: 20px 10px; */
   overflow: hidden;
 }
-
 .card-list .card-item {
   list-style: none;
-  max-width: 500px;
 }
-
 .card-list .card-item .card-link {
   position: relative;
   user-select: none;
@@ -129,25 +126,18 @@ html {
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  box-shadow: 0 10px 10px rgba(00, 0, 0, 0.05);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   transition: 0.2s ease;
 }
-
-.card-list .card-item .card-link:active {
-  cursor: grabbing;
-}
-
 .card-list .card-item .card-link:hover {
   border-color: rgb(65, 105, 225);
 }
-
 .card-list .card-link .card-image {
   width: 100%;
-  aspect-ratio: 7/5;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 10px;
 }
-
 .card-list .card-link .badge {
   color: rgb(65, 105, 225);
   padding: 8px 16px;
@@ -158,27 +148,20 @@ html {
   width: fit-content;
   border-radius: 50px;
 }
-
 .card-list .card-link .badge.history {
   color: #a67c00;
   background: #ffbf00;
 }
-
 .card-list .card-link .badge.current {
   color: #234f1e;
   background: #99edc3;
 }
-
 .card-list .card-link .card-title {
   font-size: 3rem;
   color: #000;
   font-weight: 600;
 }
-
 .card-list .card-link .card-button {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
   height: 35px;
   width: 35px;
   color: rgb(65, 105, 225);
@@ -188,9 +171,8 @@ html {
   cursor: pointer;
   border: 2px solid rgb(65, 105, 225);
   transform: rotate(-45deg);
-  transition: 0.4 ease;
+  transition: 0.4s ease;
 }
-
 .card-list .card-link:hover .card-button {
   color: #fff;
   background: rgb(65, 105, 225);
@@ -200,9 +182,9 @@ html {
   color: rgb(65, 105, 225);
   /* margin-top: -35px; */
 }
-.card-list .card-item {
-  max-width: 95vw;
-}
+/* .card-list .card-item {
+  max-width: 28vw;
+} */
 /*Achievement CSS ends*/
 
 /*Social section css*/
@@ -282,9 +264,9 @@ html {
     font-size: 1.5rem;
     margin: 5px 0 5px;
   }
-.card-list .card-item .card-link {
+  .card-list .card-item .card-link {
     min-height: 390px;
-}
+  }
 
   /* Vision Mission respo */
   .container-2 {

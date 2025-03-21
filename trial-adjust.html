@@ -1,28 +1,88 @@
-<form id="googleForm">
-    <input type="text" placeholder="F name" name="entry.2121578343" required> 
-    <input type="text" placeholder="L name" name="entry.1159097365" required> 
-    <input type="text" placeholder="Mail" name="entry.974209459" required> 
-    <input type="text" placeholder="Mobile" name="entry.1469111093" required> 
-    <input type="text" placeholder="Comments" name="entry.2050938219" required> 
-    <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Slider HTML & CSS | CodingNepal</title>
+    <link rel="stylesheet" href="./trial-adjust.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+  <body>
+    <div class="container swiper">
+      <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="./Assets/2024_SAE.jpg" alt="Image" class="card-image" />
+              <p class="badge">Developer</p>
+              <h2 class="card-title">
+                Lorem ipsum dolor sit explicabo adipisicing elit
+              </h2>
+              <button class="card-button material-symbols-rounded">
+                arrow_forward
+              </button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="./Assets/2014_plane.JPG" alt="" class="card-image" />
+              <p class="badge">Developer</p>
+              <h2 class="card-title">
+                Lorem ipsum dolor sit explicabo adipisicing elit
+              </h2>
+              <button class="card-button material-symbols-rounded">
+                arrow_forward
+              </button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="./Assets/primus.JPG" alt="" class="card-image" />
+              <p class="badge">Developer</p>
+              <h2 class="card-title">
+                Lorem ipsum dolor sit explicabo adipisicing elit
+              </h2>
+              <button class="card-button material-symbols-rounded">
+                arrow_forward
+              </button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="./Assets/aircraft2020.JPG" alt="" class="card-image" />
+              <p class="badge">Developer</p>
+              <h2 class="card-title">
+                Lorem ipsum dolor sit explicabo adipisicing elit
+              </h2>
+              <button class="card-button material-symbols-rounded">
+                arrow_forward
+              </button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="./Assets/Avalon.JPG" alt="" class="card-image" />
+              <p class="badge">Developer</p>
+              <h2 class="card-title">
+                Lorem ipsum dolor sit explicabo adipisicing elit
+              </h2>
+              <button class="card-button material-symbols-rounded">
+                arrow_forward
+              </button>
+            </a>
+          </li>
+        </ul>
 
-<p id="successMessage" style="display:none; color: green;">Form submitted successfully!</p>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-<script>
-document.getElementById("googleForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    let form = event.target;
-    let formData = new FormData(form);
-    
-    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc93j2SOsiAOC0zsgWHB4v9s2ki1n6HeZZna8YGlmiSQHXIGA/formResponse", {
-        method: "POST",
-        mode: "no-cors", // Prevents CORS errors
-        body: formData
-    }).then(() => {
-        document.getElementById("successMessage").style.display = "block"; // Show success message
-        form.reset(); // Clear the form after submission
-    }).catch(error => console.error("Error:", error));
-});
-</script>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./trial-adjust.js"></script>
+  </body>
+</html>

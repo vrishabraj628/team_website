@@ -28,29 +28,3 @@ new Swiper('.card-wrapper', {
         },
     }
   });
-
-// For hiding and unhiding nav bar
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementsByClassName("nav").style.top = "0";
-//   } else {
-//     document.getElementsByClassName("nav").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
-// var prevScrollpos = window.pageYOffset; //Some issue with pageYOffset
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset; //Some issue with pageYOffset
-//   var menu = document.querySelector(".nav"); // Select the first element with the class "menu"
-  
-//   if (prevScrollpos > currentScrollPos) {
-//     menu.style.top = "0"; // Show the menu
-//   } else {
-//     menu.style.top = "-50px"; // Hide the menu
-//   }
-  
-//   prevScrollpos = currentScrollPos; // Update the previous scroll position
-// };
