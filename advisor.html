@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentors | Team Arcis</title>
+    <!--Linking stylesheet-->
+    <link rel="stylesheet" href="./home-style.css" />
+    <link rel="stylesheet" href="./nav-bar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./advisor.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./Assets/logo_circle_icon.ico" />
+    <!-- For social icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!--Linking google fonts for icons-->
+    <!-- Swiper Arrow button -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!--Linking SwiperJS CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="scrollbar1">
+    <!--Nav and sidebar-->
+    <!--Hero image-->
+    <main>
+    <button id="backToTop"><i class="fas fa-plane" style="rotate: -90deg;"></i> Top</button>
+      <section>
+        <div class="hero-image">
+            <div class="nav">
+                <div class="img">
+                  <a href="./index.html"><img src="./Assets/Untitled design.png" alt="Arcis" /></a>
+                </div>
+                <div class="menu">
+                    Menu
+                    <button class="hamburger">
+                        <div class="lineup"></div>
+                        <div class="linemiddle"></div>
+                        <div class="linedown"></div>
+                      </button>
+                    <div class="close">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our-team.html">Team</a></li>
+                        <li><a href="advisors.html">Mentors</a></li>
+                        <li><a href="sponsors.html">Sponsor</a></li>
+                        <li><a href="history copy.html">History</a></li>
+                        <li><a href="gallery copy.html">Gallery</a></li>
+                        <li><a href="contact copy.html">Contact</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+          <div class="hero-text">
+            <h1 >Our Mentors</h1>
+           <!-- <p class="hero-text2">India's leading Aero-Design Team</p>-->
+            <br />
+          </div>
+        </div>
+      </section>
+    <!--Linking SwiperJS Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!--Linking custom script-->
+    <script src="nav-bar.js"></script>
+    <script src="all.js"></script>
+    <script>
+      // Select the button
+      let backToTopBtn = document.getElementById("backToTop");
+
+      // Show the button when scrolling down
+      window.onscroll = function () {
+          if (document.documentElement.scrollTop > 300) { // Adjust when it appears
+              backToTopBtn.style.display = "block";
+          } else {
+              backToTopBtn.style.display = "none";
+          }
+      };
+
+      // Smooth scroll to top when button is clicked
+      backToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+    </script>
+
+<div class="mentor-container">
+    
+  <div class="mentor-card">
+    <div class="mentor-text">
+      <a href="https://www.linkedin.com/in/dr-b-g-prasad-713a4710/"><h2>Dr. B. G. Prasad</h2></a>
+      <h3>Principal, DSCE</h3>
+      <p>"DSCE believes in moulding our students into good, socially responsible human beings by inculcating right values. Success is inevitable where there is foresight, firm determination, hard work and discipline. Team Arcis is an endeavour in that direction. I wish them the very best."</p>
+    </div>
+    <div class="mentor-image">
+      <a href="https://www.linkedin.com/in/dr-b-g-prasad-713a4710/" title="Know more about Dr. B. G. Prasad" target="_blank">
+        <img src="Assets/drbgprasad.jpeg.jpg" alt="Dr. B. G. Prasad">
+      </a>
+    </div>
+  </div>
+  <div class="mentor-card">
+    <div class="mentor-text">
+      <a href="https://www.linkedin.com/in/dr-hareesha-n-g-568a7332/" target="_blank"><h2>Dr. Hareesha N. G.</h2></a>
+      <h3>Faculty Advisor,</h3>
+      <h3>HOD Dept. of Aeronautics, DSCE</h3>
+      <p>"Team Arcis started in 2012 to nurture student talent and innovation. With an eternal support from the enthusiastic students like you, I see very bright prospects for Team Arcis in the years to come. I wish all the success for this team."</p>
+    </div>
+    <div class="mentor-image">
+      <a href="https://www.linkedin.com/in/dr-hareesha-n-g-568a7332/" title="Know more about Dr. Hareesha N. G." target="_blank">
+        <img src="Assets/hareesha.jpg" alt="Dr. Hareesha N. G.">
+      </a>
+    </div>
+  </div>
+  <div class="mentor-card">
+    <div class="mentor-text">
+      <a href="https://www.linkedin.com/in/ramesh-babu-9258a1113/" target="_blank"><h2>Dr. Ramesh Babu</h2></a>
+      <h3>Vice Principal,</h3>
+      <h3>HOD Dept. of Computer Science, DSCE</h3>
+      <p>"The students of the team get hands-on exposure to solving real world problems. As the previous faculty advisor of the team, it gives me immense pleasure to see where they stand today. I wish them good luck for the future."</p>
+    </div>
+    <div class="mentor-image">
+      <a href="https://www.linkedin.com/in/ramesh-babu-9258a1113/" title="Know more about Dr. Ramesh Babu" target="_blank">
+        <img src="Assets/ramesh_babu.jpg" alt="Dr. Ramesh Babu">
+      </a>
+    </div>
+  </div>
+</div>
+
+    <footer>
+      <!-- <i class="fab fa-brands fa-medium"></i> -->
+      <div class="row">
+        <div class="col">
+          <img src="./Assets/Untitled design.png" alt="" class="logo" id="footer-logo"/>
+        </div>
+        <div class="col">
+          <h3>
+            Address
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Room No. 501, NEB</p>
+          <p>Dayananda Sagar College of Engineering</p>
+          <p>Shavige Malleshwara Hills</p>
+          <p>91st Main Rd, 1st Stage</p>
+          <p>Kumaraswamy Layout</p>
+          <p>Bengaluru, Karnataka 560078</p>
+          <h4 class="email"><a href="mailto:teamarcis@dayanandasagar.edu">teamarcis@dayanandasagar.edu</a></h4>
+          <h4><a href="tel:+919741209666">+91-97412 09666</a><br><a href="tel:+917365839772">+91-73658 39772</a></h4>
+        </div>
+        <div class="col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="gallery copy.html">Gallery</a></li>
+            <li><a href="history copy.html">Legacy</a></li>
+            <li><a href="contact copy.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <!-- <h3>Newsletter <div class="underline"><span></span></div></h3> -->
+          <!-- <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form> -->
+          <div class="cnt-btn">
+            <a href="./contact copy.html">
+              <button class="contact">Contact Us</button>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.youtube.com/channel/UCgNXVEqEhOzzWZ6XdZAd-1A"
+              ><i class="fab fa-brands fa-youtube yt"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/team-arcis/posts/?feedView=all"
+              ><i class="fab fa-brands fa-linkedin-in li"></i
+            ></a>
+            <a href="https://teamarcis.medium.com/"
+              ><i class="fab fa-brands fa-medium"></i
+            ></a>
+            <a href="https://www.behance.net/team_arcis"
+              ><i class="fab fa-brands fa-behance be"></i
+            ></a>
+            <a href="https://www.instagram.com/teamarcis/"
+              ><i class="fab fa-brands fa-instagram ig"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>

@@ -43,9 +43,9 @@ html{
 
 /*Hero image CSS*/
 .hero-image {
-    background-image: url("./Assets/team_hero_pic4_top.JPG");
+    background-image: url("./Assets/team_hero_pic_2025-26_edit3.jpg");
     height: 95vh;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -56,7 +56,7 @@ html{
     font-size: 7rem;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: ghostwhite;
