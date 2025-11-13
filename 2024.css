@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/*Removing pre existing formatting*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  position: relative;
+  /* background-color: #000; */
+}
+html {
+  font-size: 7px;
+}
+
+/* Heading underlines */
+
+.line {
+  background-color: rgb(255, 0, 0);
+  height: 3px;
+  width: 230px;
+  border-radius: 25px;
+  padding: 0%;
+  margin: 0% 3%;
+}
+
+/*Hero image CSS*/
+.hero-image {
+  background-image: url("./Assets/team2024-2025.png");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: ghostwhite;
+  text-shadow: 0 0 10px #000;
+}
+.hero-text2 {
+  font-size: 5rem;
+  color: ghostwhite;
+}
+/*Hero image CSS ends*/
+/* Font CSS */
+
+.para {
+  font-size: 3rem;
+  padding: 5%;
+}
+.heading {
+  font-size: 6rem;
+  padding: 2% 5% 0;
+}
+.photo {
+  width: 50%;
+}
+.photo img {
+  width: 100%;
+}
+.content {
+  width: 50%;
+}
+.info {
+  padding: 0 10% 5%;
+  display: flex;
+}
+
+/* Data Tables for Aircraft CSS */
+table {
+  font-size: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+  border-radius: 12px 0 0 12px;
+  overflow: hidden;
+}
+.odd {
+  border-radius: 0 12px 12px 0;
+}
+td,
+th {
+  padding: 15px 20px;
+  text-align: center;
+}
+th {
+  background-color: #00093c;
+  color: #fafafa;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+tr {
+  width: 100%;
+  background-color: #fafafa;
+}
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+td {
+  font-weight: 300;
+}
+
+/* Slide in CSS */
+
+.fade-slide-image {
+  opacity: 0; /* Start fully transparent */
+  transform: translateX(-300px); /* Start slightly left to its final position */
+  transition: opacity 1s ease, transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Profile Card CSS*/
+.team {
+  display: block;
+  text-align: center;
+  justify-items: center;
+}
+.cabinet {
+  padding-top: 10px;
+  justify-items: space-between;
+  width: 86vw;
+  padding-bottom: 30px;
+}
+.cabinet > a > img {
+  height: 250px;
+  margin: 0 30px 15px;
+  transition: opacity 0.3s;
+}
+.cabinet > a > img:hover {
+  opacity: 1;
+}
+.cabinet:hover > a > img:not(:hover) {
+  opacity: 0.5;
+}
+
+.on-mob {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .fade-slide-image {
+    transform: translateX(-100px); /* Slide in from below */
+  }
+  .hero-image {
+    height: 42vh;
+    background-position: top;
+  }
+  .hero-text {
+    font-size: 3.3rem;
+  }
+  .content .para {
+    padding: 5px 0 15px;
+  }
+  .heading {
+    font-size: 4.5rem;
+    padding: 2% 0 0;
+  }
+  .para {
+    font-size: 2rem;
+  }
+  .info {
+    display: block;
+    width: 90vw;
+    padding: 0 5vw 5%;
+  }
+  .info:nth-child(7) {
+    padding: 0 5vw 7%;
+  }
+  .photo {
+    display: none;
+  }
+  .on-mob {
+    display: block;
+  }
+  .on-mob img {
+    width: 90vw;
+  }
+  .content {
+    width: 100%;
+  }
+  .cabinet > a > img {
+    margin: 0 0 15px;
+  }
+  .cabinet > a:nth-child(1) > img {
+    margin: 15px 0;
+  }
+  .info:nth-child(6) .on-mob img,
+  .info:nth-child(7) .on-mob img {
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+  }
+  table {
+    border-radius: 12px 12px 0 0;
+  }
+}

@@ -124,6 +124,9 @@ main {
 .t2023{
   background-image: url(./Assets/team2023-2024.png);
 }
+.t2024{
+  background-image: url(./Assets/team2024-2025.png);
+}
 .text{
   font-size: 10rem;
   color: white;
