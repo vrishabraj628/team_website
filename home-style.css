@@ -106,11 +106,12 @@ html {
 .container-1 {
   background-color: rgb(119, 181, 254, 0.6);
   height: auto;
-  padding:10px;
+  padding:13px;
 }
 
 .card-wrapper {
   margin: 35px 0px 0 px;
+  padding: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -135,7 +136,6 @@ html {
     transform: translateX(calc(-386px * 6 - 180px)); /* card width (350 + 18*2) + gap (30) * number of cards */
   }
 }
-
 .card-list .card-item {
   list-style: none;
   flex-shrink: 0;
@@ -152,7 +152,7 @@ html {
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05); */
   transition: 0.2s ease;
 }
 
@@ -161,6 +161,7 @@ html {
 }
 
 .card-list .card-link .card-image {
+  
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -169,16 +170,17 @@ html {
 }
 
 .card-list .card-link .badge {
-  color: rgb(65, 105, 225);
+  color: #4169e1;
   padding: 8px 16px;
   font-size: 2rem;
   font-weight: 400;
   margin: 16px 0 18px;
   background: #dde4ff;
-  width: fit-content;
-  border-radius: 50px;
+  width: max-content;
+  border-radius: 10px;
+  
 }
-
+/* 
 .card-list .card-link .badge.history {
   color: #a67c00;
   background: #ffbf00;
@@ -187,12 +189,26 @@ html {
 .card-list .card-link .badge.current {
   color: #234f1e;
   background: #99edc3;
-}
+} */
 
 .card-list .card-link .card-title {
   font-size: 3rem;
   color: #000;
   font-weight: 600;
+  display: inline-block;
+  max-width: calc(100% - 120px);
+}
+
+.plane-year {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  background:  #49a7ffbc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0;
+  float: right;
 }
 .card-list .card-link .card-content {
   font-size: 2rem;
@@ -217,7 +233,6 @@ html {
   color: #fff;
   background: rgb(65, 105, 225);
 }
-
 /*Achievement CSS ends*/
 
 /*Social section css*/
@@ -283,8 +298,8 @@ html {
     color: ghostwhite;
   }
   .heading {
-    padding: 2% 3% 0 3%;
-    font-size: 4rem;
+    padding: 0% 3% 0 3%;
+    font-size: 4.2rem;
   }
 
   /* Text responsiveness */
